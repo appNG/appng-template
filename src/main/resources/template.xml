@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="http://www.appng.org/schema/application" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.appng.org/schema/application http://www.appng.org/schema/application/appng-application.xsd">
+	<name>${project.artifactId}</name>
+	<display-name>${templateName}</display-name>
+	<description>${project.description}</description>
+	<long-description>${project.description}</long-description>
+	<version>${project.version}</version>
+	<timestamp>${timestamp}</timestamp>
+	<appng-version>${appNGVersion}</appng-version>
+</template>

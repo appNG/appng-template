@@ -1,0 +1,753 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.appng.org/schema/appng" lang="en" xml:lang="en">
+	<head>
+		<title> - [webadmin] - [appng-webadmin]</title>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta content="de" name="language" />
+		<meta content="" name="author" />
+		<meta content="" name="publisher" />
+		<meta content="Frankfurt am Main" name="copyright" />
+		<meta content="noindex,nofollow" name="robots" />
+		<link href="../../../main/resources/resources/tools_stylesheet_screen.css" rel="stylesheet" type="text/css" />
+
+		<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="../../../main/resources/resources/tools_stylesheet_screen_ie7.css" media="screen" />
+		<![endif]--> 
+		<!--[if IE 6]>
+		<link rel="stylesheet" type="text/css" href="../../../main/resources/resources/tools_stylesheet_screen_ie6.css" media="screen" />
+		<![endif]-->
+
+		<link href="../../../main/resources/resources/tools_stylesheet_jquery-ui-1.8.22.custom.css" rel="stylesheet" type="text/css" />	
+		<link href="../../../main/resources/resources/tools_stylesheet_default_theme.css" rel="stylesheet" type="text/css" />
+
+		<link href="../../../main/resources/assets/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_jquery.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_jquery-ui.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_jquery_tree.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_jquery_format-1.2.min.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_timepicker.js" type="text/javascript" ></script>
+
+		<script language="javascript" src="../../../main/resources/resources/shCore.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/shBrushXml.js" type="text/javascript"></script>
+		<link href="../../../main/resources/resources/tools_stylesheet_shCoreDefault.css" rel="stylesheet" type="text/css" />	
+		
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_jquery-picklist.min.js" type="text/javascript" ></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_prettify.js" type="text/javascript" ></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_jquery.multiselect.min.js" type="text/javascript" ></script>
+
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_ait_slideBox.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_ait_lightwindow.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_ait_tabBox.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_ait-syntaxHighlighter.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_ait_form.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_ait_manager.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/i18n/jquery-ui-datepicker-de.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/i18n/jquery-ui-timepicker-de.js" type="text/javascript"></script>		
+
+		<script type="text/javascript" src="../../../main/resources/resources/tiny_mce/jquery.tinymce.js"></script>
+		<script type="text/javascript" src="../../../main/resources/resources/tiny_mce/tiny_mce.js"></script>
+				<script type="text/javascript" src="../../../main/resources/resources/tools_javascript_autosize.js"></script>
+	</head>
+	
+	<body>
+		<div id="container">
+			<table border="0" id="positioner">
+			<tr>
+				<td id="left">
+					<div id="logo">
+						<a href="../index.html">
+						<img alt="" border="" height="110" src="../../../main/resources/assets/logo_trans.png" title=""
+								width="220"></img>
+						</a>
+					</div>
+					<script language="javascript" type="text/javascript">
+									
+									var slideBoxName = 'main-navigation';
+									slideBox.init(slideBoxName, {listType:0});
+								
+								
+					</script>
+					<div id="navi">
+						<ul>
+						<li>
+							<a class="selected" href="javascript: void(0);" id="masternavi_2"
+								onfocus="if(this.blur)this.blur()">
+								<span class="menuItem">webadmin</span>
+							</a>
+							<ul id="masternavi_2_a">
+								<li>
+									<a class="" href="#" id="masternavi_2-2"
+									onfocus="if(this.blur)this.blur()">
+									<span class="menuItem">Item3-2</span>
+									</a>
+								</li>
+								<li>
+									<a class="" href="#" id="masternavi_2-4"
+									onfocus="if(this.blur)this.blur()">
+									<span class="menuItem">Scheduler</span>
+									</a>
+								</li>
+								<li>
+									<a class="active" href="" id="masternavi_2-5"
+									onfocus="if(this.blur)this.blur()">
+									<span class="menuItem">Webadmin</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						</ul>
+						<script language="javascript" type="text/javascript">
+										slideBox.addItem(slideBoxName,'masternavi_1');
+									
+						</script>
+						<script language="javascript" type="text/javascript">
+										slideBox.addItem(slideBoxName,'masternavi_2');
+									
+						</script>
+					</div>
+					<div id="box_info">
+						<div class="wrapper">
+						<table>
+							<tr>
+								<td class="col1">
+								<img title="ico_ico_user" class="icon ico_user" alt="ico_ico_user" src="../../../main/resources/assets/spacer.png" border="0" complete="complete"/>
+								</td>
+								<td class="col2">
+									<span class="head">Angemeldet als:</span><br/>
+									<span>Administrator, admin</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="col1">
+								<img title="ico_goto" class="icon ico_goto" alt="ico_goto" src="../../../main/resources/assets/spacer.png" border="0" complete="complete"/>
+								</td>
+								<td class="col2">
+									<a href="#">Logout</a>
+								</td>
+							</tr>
+						</table>
+						</div>
+					</div>
+				</td>
+				<td id="right">
+					<div id="lock"></div>
+					<div id="content">
+						<div class="heading">
+						<h2>Plugins</h2>
+						<h1></h1>
+						<div class="navigation_page">
+							<div class="button ">
+								<a href="#" class="button btn_" target="_self"
+									title="Sites">Sites</a>
+							</div>
+							<div class="button active">
+								<a href="#" class="button active btn_" target="_self"
+									title="Plugins">Plugins</a>
+							</div>
+							<div class="button ">
+								<a href="#" class="button btn_" target="_self"
+									title="Users">Users</a>
+							</div>
+							<div class="button ">
+								<a href="#s" class="button btn_" target="_self"
+									title="User groups">User groups</a>
+							</div>
+							<div class="button ">
+								<a href="#" class="button btn_"
+									target="_self"
+									title="Core application">Core application</a>
+							</div>
+							<p class="clr"> </p>
+						</div>
+						</div>
+						<div class="hr"></div>
+						<div class="tab_buttons_panel" id="buttons_panel_js"></div>
+						<div id="tab_box">
+						<p class="clr"> </p>
+						<div class="tab_box_item" id="tab_plugins" rel="tab_plugins">
+							<div class="tab_buttons_panel">
+								<ul>
+									<li class="selected">
+									<a class="option" href="#tab_plugins">
+										<span>Plugins</span>
+									</a>
+									</li>
+								</ul>
+								<p class="clr"> </p>
+							</div>
+							<div id="ds_plugins">
+								<div class="element_set">
+									<div class="head">
+									<span class="title">Sprites image desription: icons_default_theme.png / icons_default_theme_hv.png / icons_default_theme_ia.png</span>
+									</div>
+								</div>
+								
+							</div>
+							<div id="ds_plugins_a">
+								<div class="pagination_panel">
+									<div class="navigation">
+									<span class="empty"> </span>
+									</div>
+									
+									<p class="clr"> </p>
+								</div>
+								<div class="navigation_box">
+								<a href="#" class="btn_page_next">Back</a>
+								</div>
+								<div class="buttons_panel">State{kind of sort}<a class="button only-icon btn_deleted" href="#">&nbsp;</a></div>
+								<table rel="data-table">
+								
+									<tr>
+									<th><a class="button btn_sort_desc" href="#">Name or Nr.</a>&nbsp;<a href="" class="button only-icon btn_sort_cancel">cancel</a></th>
+									<th align="left" width="260px"><a class="button btn_sort_asc" href="#">Icons + file extention</a>&nbsp;<a href="" class="button only-icon btn_sort_cancel">cancel</a></th>
+									<th align="left" width="130px"><a class="button btn_sort_default" href="#">Buttons</a></th>
+									<th>CSS-Classes in tools_stylesheet_default_theme.css</th>
+									</tr>
+									<tr class="line_0">
+									<td>deploy release v.</td>
+									<td><img class="icon ico_d_release" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_d_release" title="ico_d_release" /></td>
+									<td><a class="button only-icon btn_d_release" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_d_release inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_d_release, .ico_d_release</td>
+									</tr>
+									<tr class="line_1">
+									<td>deploy snapshot v.</td>
+									<td><img class="icon ico_d_snapshot" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_d_snapshot" title="ico_d_snapshot" /></td>
+									<td><a class="button only-icon btn_d_snapshot" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_d_snapshot inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_d_snapshot, .ico_d_snapshot</td>
+									</tr>
+									<tr class="line_0">
+									<td>unfavorite</td>
+									<td><img class="icon ico_unfavorite" src="../../../main/resources/assets/spacer.png" border="0" alt="unfavorite" title="unfavorite" /></td>
+									<td><a class="button only-icon btn_unfavorite" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_unfavorite inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_unfavorite, .ico_unfavorite</td>
+									</tr>
+									<tr class="line_1">
+									<td>favorite</td>
+									<td><img class="icon ico_favorite" src="../../../main/resources/assets/spacer.png" border="0" alt="favorite" title="favorite" /></td>
+									<td><a class="button only-icon btn_favorite" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_favorite inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_favorite, .ico_favorite</td>
+									</tr>
+									<tr class="line_0">
+									<td>navigate to child</td>
+									<td><img class="icon ico_navigate_to_child" src="../../../main/resources/assets/spacer.png" border="0" alt="navigate_to_child" title="navigate_to_child" /></td>
+									<td><a class="button only-icon btn_navigate_to_child" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_navigate_to_child inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_navigate_to_child, .ico_navigate_to_child</td>
+									</tr>
+									<tr class="line_1">
+									<td>spacer</td>
+									<td><img class="icon ico_spacer" src="../../../main/resources/assets/spacer.png" border="0" alt="spacer" title="spacer" /></td>
+									<td>no button</td>
+									<td>.ico_spacer</td>
+									</tr>
+									<tr class="line_0">
+									<td>copy</td>
+									<td><img class="icon ico_copy" src="../../../main/resources/assets/spacer.png" border="0" alt="copy" title="copy" /></td>
+									<td><a class="button only-icon btn_copy" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_copy inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_copy, .ico_copy</td>
+									</tr>
+									<tr class="line_1">
+									<td>workflow</td>
+									<td><img class="icon ico_workflow" src="../../../main/resources/assets/spacer.png" border="0" alt="workflow" title="workflow" /></td>
+									<td><a class="button only-icon btn_workflow" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_workflow inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_workflow, .ico_workflow</td>
+									</tr>
+									<tr class="line_0">
+									<td>locked</td>
+									<td><img class="icon ico_locked" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_locked" title="ico_locked" /></td>
+									<td>no button</td>
+									<td>.ico_locked</td>
+									</tr>
+									<tr class="line_1">
+									<td>unlocked</td>
+									<td><img class="icon ico_unlocked" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_unlocked" title="ico_ico_unlocked" /></td>
+									<td>no button</td>
+									<td>.ico_unlocked</td>
+									</tr>
+									<tr class="line_0">
+									<td>user_name</td>
+									<td><img class="icon ico_user_name" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_user_name" title="ico_user_name" /></td>
+									<td><a class="button only-icon btn_user_name" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_user_name inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_user_name, .ico_user_name</td>
+									</tr>
+									<tr class="line_1">
+									<td>user</td>
+									<td><img class="icon ico_user" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_user" title="ico_ico_user" /></td>
+									<td><a class="button only-icon btn_user" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_user inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_user, .ico_user</td>
+									</tr>
+									<tr class="line_0">
+									<td>new</td>
+									<td><img class="icon ico_new" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_new" title="ico_ico_new" /></td>
+									<td><a class="button only-icon btn_new" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_new inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_new, .ico_new</td>
+									</tr>
+									<tr class="line_1">
+									<td>cancel, reset</td>
+									<td><img class="icon ico_cancel" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_cancel" title="ico_ico_cancel" /></td>
+									<td><a class="button only-icon btn_cancel" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_cancel inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_cancel, a.btn_reset, .ico_cancel, .ico_reset</td>
+									</tr>
+									<tr class="line_0">
+									<td>save</td>
+									<td><img class="icon ico_save" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_save" title="ico_ico_save" /></td>
+									<td><a class="button only-icon btn_save" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_save inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_save, .ico_save</td>
+									</tr>
+									<tr class="line_1">
+									<td>edit</td>
+									<td><img class="icon ico_edit" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_edit" title="ico_ico_edit" /></td>
+									<td><a class="button only-icon btn_edit" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_edit inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_edit, .ico_edit</td>
+									</tr>
+									<tr class="line_0">
+									<td>undo</td>
+									<td><img class="icon ico_undo" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_undo" title="ico_ico_undo" /></td>
+									<td><a class="button only-icon btn_undo" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_undo inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_undo, .ico_undo</td>
+									</tr>
+									<tr class="line_1">
+									<td>preview</td>
+									<td><img class="icon ico_preview" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_preview" title="ico_ico_preview" /></td>
+									<td><a class="button only-icon btn_preview" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_preview inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_preview, .ico_preview</td>
+									</tr>
+									<tr class="line_0">
+									<td>search, detail</td>
+									<td><img class="icon ico_search" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_search" title="ico_ico_search" /></td>
+									<td><a class="button only-icon btn_search" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_search inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_search, a.btn_detail, .ico_search, .ico_detail</td>
+									</tr>
+									<tr class="line_1">
+									<td>unlock</td>
+									<td><img class="icon ico_unlock" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_unlock" title="ico_ico_unlock" /></td>
+									<td><a class="button only-icon btn_unlock" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_unlock inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_unlock, .ico_unlock</td>
+									</tr>
+									<tr class="line_0">
+									<td>lock</td>
+									<td><img class="icon ico_lock" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_lock" title="ico_ico_lock" /></td>
+									<td><a class="button only-icon btn_lock" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_lock inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_lock, .ico_lock</td>
+									</tr>
+									<tr class="line_1">
+									<td>export</td>
+									<td><img class="icon ico_export" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_export" title="ico_ico_export" /></td>
+									<td><a class="button only-icon btn_export" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_export inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_export, .ico_export</td>
+									</tr>
+									<tr class="line_0">
+									<td>import</td>
+									<td><img class="icon ico_import" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_import" title="ico_ico_import" /></td>
+									<td><a class="button only-icon btn_import" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_import inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_import, .ico_import</td>
+									</tr>
+									<tr class="line_1">
+									<td>delete</td>
+									<td><img class="icon ico_delete" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_delete" title="ico_ico_delete" /></td>
+									<td><a class="button only-icon btn_delete" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_delete inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_delete, .ico_delete</td>
+									</tr>
+									<tr class="line_0">
+									<td>upload</td>
+									<td><img class="icon ico_upload" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_upload" title="ico_ico_upload" /></td>
+									<td><a class="button only-icon btn_upload" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_upload inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_upload, .ico_upload</td>
+									</tr>
+									<tr class="line_1">
+									<td>reverse_selection</td>
+									<td><img class="icon ico_reverse_selection" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_reverse_selection" title="ico_ico_reverse_selection" /></td>
+									<td><a class="button only-icon btn_reverse_selection" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_reverse_selection inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_reverse_selection, .ico_reverse_selection</td>
+									</tr>
+									<tr class="line_0">
+									<td>send</td>
+									<td><img class="icon ico_send" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ico_send" title="ico_ico_send" /></td>
+									<td><a class="button only-icon btn_send" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_send inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_send, .ico_send</td>
+									</tr>
+									<tr class="line_1">
+									<td>rotate_right</td>
+									<td><img class="icon ico_rotate_right" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_rotate_right" title="ico_rotate_right" /></td>
+									<td><a class="button only-icon btn_rotate_right" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_rotate_right inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_rotate_right, .ico_rotate_right</td>
+									</tr>
+									<tr class="line_0">
+									<td>rotate_left</td>
+									<td><img class="icon ico_rotate_left" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_rotate_left" title="ico_rotate_left" /></td>
+									<td><a class="button only-icon btn_rotate_left" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_rotate_left inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_rotate_left, .ico_rotate_left</td>
+									</tr>
+									<tr class="line_1">
+									<td>next, goto, login, logout</td>
+									<td><img class="icon ico_goto" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_goto" title="ico_goto" /></td>
+									<td><a class="button only-icon btn_goto" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_goto inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_next, a.btn_goto, a.btn_login, a.btn_logout, .ico_next, .ico_goto, .ico_login, .ico_logout</td>
+									</tr>
+									<tr class="line_0">
+									<td>prev, back</td>
+									<td><img class="icon ico_back" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_back" title="ico_back" /></td>
+									<td><a class="button only-icon btn_back" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_back inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_prev, a.btn_back, .ico_prev, .ico_back</td>
+									</tr>
+									<tr class="line_1">
+									<td>deploy</td>
+									<td><img class="icon ico_deploy" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_deploy" title="ico_deploy" /></td>
+									<td><a class="button only-icon btn_deploy" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_deploy inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_deploy, .ico_deploy</td>
+									</tr>
+									<tr class="line_0">
+									<td>deploy to file system</td>
+									<td><img class="icon ico_deploy_fs" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_deploy_fs" title="ico_deploy_fs" /></td>
+									<td><a class="button only-icon btn_deploy_fs" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_deploy_fs inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_deploy_fs, .ico_deploy_fs</td>
+									</tr>
+									<tr class="line_1">
+									<td>deploy to database</td>
+									<td><img class="icon ico_deploy_db" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_deploy_db" title="ico_deploy_db" /></td>
+									<td><a class="button only-icon btn_deploy_db" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_deploy_db inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_deploy_db, .ico_deploy_db</td>
+									</tr>
+									<tr class="line_0">
+									<td>reload</td>
+									<td><img class="icon ico_reload" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_reload" title="ico_reload" /></td>
+									<td><a class="button only-icon btn_reload" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_reload inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_reload, .ico_reload</td>
+									</tr>
+									<tr class="line_1">
+									<td>download</td>
+									<td><img class="icon ico_download" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_download" title="ico_download" /></td>
+									<td><a class="button only-icon btn_download" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_download inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_download, .ico_download</td>
+									</tr>
+									<tr class="line_0">
+									<td>upload_once</td>
+									<td><img class="icon ico_upload_once" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_upload_once" title="ico_upload_once" /></td>
+									<td><a class="button only-icon btn_upload_once" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_upload_once inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_upload_once, .ico_upload_once</td>
+									</tr>
+									<tr class="line_1">
+									<td>running</td>
+									<td><img class="icon ico_running" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_running" title="ico_running" /></td>
+									<td><a class="button only-icon btn_running" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_running inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_running, .ico_running</td>
+									</tr>
+									<tr class="line_0">
+									<td>start</td>
+									<td><img class="icon ico_start" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_start" title="ico_start" /></td>
+									<td><a class="button only-icon btn_start" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_start inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_start, .ico_start</td>
+									</tr>
+									<tr class="line_1">
+									<td>schedule</td>
+									<td><img class="icon ico_schedule" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_schedule" title="ico_schedule" /></td>
+									<td><a class="button only-icon btn_schedule" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_schedule inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_schedule, .ico_schedule</td>
+									</tr>
+									<tr class="line_0">
+									<td>unschedule</td>
+									<td><img class="icon ico_unschedule" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_unschedule" title="ico_unschedule" /></td>
+									<td><a class="button only-icon btn_unschedule" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_unschedule inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_unschedule, .ico_unschedule</td>
+									</tr>
+									<tr class="line_1">
+									<td>scheduled</td>
+									<td><img class="icon ico_scheduled" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_scheduled" title="ico_scheduled" /></td>
+									<td><a class="button only-icon btn_scheduled" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_scheduled inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_scheduled, .ico_scheduled</td>
+									</tr>
+									<tr class="line_0">
+									<td>reddot_arrow_right, reddot</td>
+									<td><img class="icon ico_reddot" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_reddot" title="ico_reddot" /></td>
+									<td><a class="button only-icon btn_reddot" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_reddot inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_reddot_arrow_right, a.btn_reddot, .ico_reddot_arrow_right, .ico_reddot</td>
+									</tr>
+									<tr class="line_1">
+									<td>upgrade</td>
+									<td><img class="icon ico_upgrade" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_upgrade" title="ico_upgrade" /></td>
+									<td><a class="button only-icon btn_upgrade" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_upgrade inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_upgrade, .ico_upgrade</td>
+									</tr>
+									<tr class="line_0">
+									<td>display_items</td>
+									<td><img class="icon ico_display_items" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_display_items" title="ico_display_items" /></td>
+									<td><a class="button only-icon btn_display_items" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_display_items inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_display_items, .ico_display_items</td>
+									</tr>
+									<tr class="line_1">
+									<td>display_table</td>
+									<td><img class="icon ico_display_table" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_display_table" title="ico_display_table" /></td>
+									<td><a class="button only-icon btn_display_table" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_display_table inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_display_table, .ico_display_table</td>
+									</tr>
+									<tr class="line_0">
+									<td>deleted</td>
+									<td><img class="icon ico_deleted" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_deleted" title="ico_deleted" /></td>
+									<td><a class="button only-icon btn_deleted" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_deleted inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_deleted, .ico_deleted</td>
+									</tr>
+									<tr class="line_1">
+									<td>activate</td>
+									<td><img class="icon ico_activate" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_activate" title="ico_activate" /></td>
+									<td><a class="button only-icon btn_activate" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_activate inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_activate, .ico_activate</td>
+									</tr>
+									<tr class="line_0">
+									<td>deactivate</td>
+									<td><img class="icon ico_deactivate" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_deactivate" title="ico_deactivate" /></td>
+									<td><a class="button only-icon btn_deactivate" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_deactivate inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_deactivate, .ico_deactivate</td>
+									</tr>
+									<tr class="line_1">
+									<td>add</td>
+									<td><img class="icon ico_add" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_add" title="ico_add" /></td>
+									<td><a class="button only-icon btn_add" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_add inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_add, .ico_add</td>
+									</tr>
+									<tr class="line_0">
+									<td>trash</td>
+									<td><img class="icon ico_trash" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_trash" title="ico_trash" /></td>
+									<td><a class="button only-icon btn_trash" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_trash inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_trash, .ico_trash</td>
+									</tr>
+									<tr class="line_1">
+									<td>ticker</td>
+									<td><img class="icon ico_ticker" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_ticker" title="ico_ticker" /></td>
+									<td><a class="button only-icon btn_ticker" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_ticker inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_ticker, .ico_ticker</td>
+									</tr>
+									<tr class="line_0">
+									<td>pag_back</td>
+									<td><img class="icon ico_pag_back" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_pag_back" title="ico_pag_back" /></td>
+									<td><a class="button only-icon btn_pag_back" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_pag_back inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_pag_back, .ico_pag_back</td>
+									</tr>
+									<tr class="line_1">
+									<td>pag_start</td>
+									<td><img class="icon ico_pag_start" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_pag_start" title="ico_pag_start" /></td>
+									<td><a class="button only-icon btn_pag_start" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_pag_start inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_pag_start, .ico_pag_start</td>
+									</tr>
+									<tr class="line_0">
+									<td>pag_next</td>
+									<td><img class="icon ico_pag_next" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_pag_next" title="ico_pag_next" /></td>
+									<td><a class="button only-icon btn_pag_next" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_pag_next inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_pag_next, .ico_pag_next</td>
+									</tr>
+									<tr class="line_1">
+									<td>pag_end</td>
+									<td><img class="icon ico_pag_end" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_pag_end" title="ico_pag_end" /></td>
+									<td><a class="button only-icon btn_pag_end" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_pag_end inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_pag_end, .ico_pag_end</td>
+									</tr>
+									<tr class="line_0">
+									<td>arrow_up</td>
+									<td><img class="icon ico_arrow_up" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_arrow_up" title="ico_arrow_up" /></td>
+									<td><a class="button only-icon btn_arrow_up" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_arrow_up inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_arrow_up, .ico_arrow_up</td>
+									</tr>
+									<tr class="line_1">
+									<td>arrow_down</td>
+									<td><img class="icon ico_arrow_down" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_arrow_down" title="ico_arrow_down" /></td>
+									<td><a class="button only-icon btn_arrow_down" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_arrow_down inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_arrow_down, .ico_arrow_down</td>
+									</tr>
+									<tr class="line_0">
+									<td>arrow_up_start</td>
+									<td><img class="icon ico_arrow_up_start" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_arrow_up_start" title="ico_arrow_up_start" /></td>
+									<td><a class="button only-icon btn_arrow_up_start" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_arrow_up_start inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_arrow_up_start, .ico_arrow_up_start</td>
+									</tr>
+									<tr class="line_1">
+									<td>arrow_down_end</td>
+									<td><img class="icon ico_arrow_down_end" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_arrow_down_end" title="ico_arrow_down_end" /></td>
+									<td><a class="button only-icon btn_arrow_down_end" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_arrow_down_end inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_arrow_down_end, .ico_arrow_down_end</td>
+									</tr>
+									<tr class="line_0">
+									<td>led_red</td>
+									<td><img class="icon ico_led_red" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_led_red" title="ico_led_red" /></td>
+									<td><a class="button only-icon btn_led_red" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_led_red inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_led_red, .ico_led_red</td>
+									</tr>
+									<tr class="line_1">
+									<td>led_orange</td>
+									<td><img class="icon ico_led_orange" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_led_orange" title="ico_led_orange" /></td>
+									<td><a class="button only-icon btn_led_orange" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_led_orange inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_led_orange, .ico_led_orange</td>
+									</tr>
+									<tr class="line_0">
+									<td>led_green</td>
+									<td><img class="icon ico_led_green" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_led_green" title="ico_led_green" /></td>
+									<td><a class="button only-icon btn_led_green" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_led_green inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_led_green, .ico_led_green</td>
+									</tr>
+									<tr class="line_1">
+									<td>led_red, led_orange, led_green</td>
+									<td><img class="icon ico_led_red" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_led_red" title="ico_led_red" />&nbsp;<img class="icon ico_led_orange" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_led_orange" title="ico_led_orange" />&nbsp;<img class="icon ico_led_green" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_led_green" title="ico_led_green" /></td>
+									<td></td>
+									<td></td>
+									</tr>
+									<tr class="line_0">
+									<td>1</td>
+									<td><span class="icon ico_file_unknown">alles andere</span></td>
+									<td>no button</td>
+									<td>.ico_file_unknown</td>
+									</tr>
+									<tr class="line_1">
+									<td>2</td>
+									<td><span class="icon ico_file_doc">doc, docx, odt</span></td>
+									<td>no button</td>
+									<td>.ico_file_doc</td>
+									</tr>
+									<tr class="line_0">
+									<td>3</td>
+									<td><span class="icon ico_file_xls">xls, xlsx, ods</span></td>
+									<td>no button</td>									
+									<td>.ico_file_xls</td>
+									</tr>
+									<tr class="line_1">
+									<td>4</td>
+									<td><span class="icon ico_file_ppt">ppt, pptx, odp</span></td>
+									<td>no button</td>									
+									<td>.ico_file_ppt</td>
+									</tr>
+									<tr class="line_0">
+									<td>5</td>
+									<td><span class="icon ico_file_pdf">pdf</span></td>
+									<td>no button</td>									
+									<td>.ico_file_pdf</td>
+									</tr>
+									<tr class="line_1">
+									<td>6</td>
+									<td><span class="icon ico_file_img">jpg, gif, png</span></td>
+									<td>no button</td>									
+									<td>.ico_file_img</td>
+									</tr>
+									<tr class="line_0">
+									<td>7</td>
+									<td><span class="icon ico_file_video">avi, mp4, m4v, f4v, mov, flv, ogv</span></td>
+									<td>no button</td>									
+									<td>.ico_file_video</td>
+									</tr>
+									<tr class="line_1">
+									<td>8</td>
+									<td><span class="icon ico_file_audio">mp3, aac, m4a, f4a, ogg, oga</span></td>
+									<td>no button</td>									
+									<td>.ico_file_audio</td>
+									</tr>
+									<tr class="line_0">
+									<td>9</td>
+									<td><span class="icon ico_file_zip">zip, rar, 7z, tar, gz, tgz</span></td>
+									<td>no button</td>									
+									<td>.ico_file_zip</td>
+									</tr>
+									<tr class="line_1">
+									<td>10</td>
+									<td><span class="icon ico_file_txt">txt, properties, sql, log, js, css, html, sh, bat</span></td>
+									<td>no button</td>									
+									<td>.ico_file_txt</td>
+									</tr>
+									<tr class="line_0">
+									<td>11</td>
+									<td><span class="icon ico_file_xml">xml, xsl, xsd, csv</span></td>
+									<td>no button</td>									
+									<td>.ico_file_xml</td>
+									</tr>
+									<tr class="line_1">
+									<td>play_start</td>
+									<td><img class="icon ico_play_start" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_play_start" title="ico_play_start" /></td>
+									<td><a class="button only-icon btn_play_start" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_play_start inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_play_start, .ico_play_start</td>
+									</tr>
+									<tr class="line_0">
+									<td>play_pause</td>
+									<td><img class="icon ico_play_pause" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_play_pause" title="ico_play_pause" /></td>
+									<td><a class="button only-icon btn_play_pause" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_play_pause inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_play_pause, .ico_play_pause</td>
+									</tr>
+									<tr class="line_1">
+									<td>play_stop</td>
+									<td><img class="icon ico_play_stop" src="../../../main/resources/assets/spacer.png" border="0" alt="ico_play_stop" title="ico_play_stop" /></td>
+									<td><a class="button only-icon btn_play_stop" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_play_stop inactive" href="#">&nbsp;</a></td>
+									<td>a.btn_play_stop, .ico_play_stop</td>
+									</tr>
+									<tr class="line_0">
+									<td>sort_default</td>
+									<td>no icon</td>
+									<th><a class="button btn_sort_default" href="#">Field name</a></th>
+									<td>a.btn_sort_default</td>
+									</tr>
+									<tr class="line_1">
+									<td>sort_asc + cancel</td>
+									<td>no icon</td>
+									<th><a class="button btn_sort_asc" href="#">Field name</a>&nbsp;<a href="" class="button only-icon btn_sort_cancel">cancel</a></th>
+									<td>a.btn_sort_asc + a.btn_sort_cancel</td>
+									</tr>
+									<tr class="line_0">
+									<td>sort_desc + cancel</td>
+									<td>no icon</td>
+									<th><a class="button btn_sort_desc" href="#">Field name</a>&nbsp;<a href="" class="button only-icon btn_sort_cancel">cancel</a></th>
+									<td>a.btn_sort_desc + a.btn_sort_cancel</td>
+									</tr>
+									<tr class="line_1">
+									<td>play: start, pause, stop</td>
+									<td></td>
+									<td><a class="button only-icon btn_play_start" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_play_pause" href="#">&nbsp;</a>&nbsp;<a class="button only-icon btn_play_stop" href="#">&nbsp;</a></td>
+									<td></td>
+									</tr>
+									
+								</table>
+								
+								
+							</div>
+						</div>
+						
+						</div>
+						</div>
+					</div>
+					<script language="javascript" type="text/javascript">
+													$(document).ready(function(){ 
+													var config = {
+														id: 'tab_box',
+														buttonPanelId: "buttons_panel_js",
+														itemClass: 'tab_box_item',
+														itemTitleClass: 'tab_buttons_panel',
+														buttonPrefixTemplate:  '',
+														buttonSuffixTemplate: ''
+													}
+													
+													tabBox.addItem(config);
+													tabBox.activateTabByName(app.getAnchorFromURL());
+													
+													syntaxHighlighter.initGlobal();
+													
+													lightwindow.init( {
+																overlayId: 'overlay',
+																lightwindowId: 'lightwindow',
+																lightwindowTopDelta: 70,
+																overlayOnClick: function(){ lightwindow.hide(); }
+													});
+													
+						app.setLabels({
+														inProcess: '{in.process}_ADD_TO_DICT',
+														buttonYes: 'Yes',
+														buttonNo: 'No',
+														buttonAbort: '{abort}',
+														buttonRejectUpdates: '{reject.updates}',
+														uploadedItem: '{uploaded.item}',
+														uploadedItems: '{uploaded.items}',
+														buttonClose: 'close',
+														previewText: 'XML preview'
+													});
+													
+													});
+												
+					</script>
+				</td>
+			</tr>
+			</table>
+		</div>
+	</body>
+</html>

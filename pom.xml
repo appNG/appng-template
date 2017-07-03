@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.appng</groupId>
+	<artifactId>appng-template</artifactId>
+	<version>1.14.2</version>
+	<packaging>jar</packaging>
+	<name>appNG Template</name>
+	<description>The appNG-template</description>
+
+	<parent>
+		<groupId>org.appng</groupId>
+		<artifactId>appng-template-parent</artifactId>
+		<version>1.14.1</version>
+	</parent>
+
+	<properties>
+		<appNGVersion>${project.parent.version}</appNGVersion>
+		<projectId>TPL</projectId>
+		<templateName>appng</templateName>
+	</properties>
+
+	<issueManagement>
+		<system>jira</system>
+		<url>https://www.appng.org/jira/projects/TPL</url>
+	</issueManagement>
+	<scm>
+		<connection>scm:git:ssh://git@github.com:appNG/appng-template.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:appNG/appng-template.git</developerConnection>
+		<url>https://github.com/appNG/appng-template</url>
+	</scm>
+	<distributionManagement>
+		<repository>
+			<id>appng-stable</id>
+			<url>https://www.appng.org/nexus/repository/appng-stable/</url>
+		</repository>
+		<snapshotRepository>
+			<id>appng-snapshot</id>
+			<url>https://www.appng.org/nexus/repository/appng-snapshot/</url>
+		</snapshotRepository>
+	</distributionManagement>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.appng</groupId>
+				<artifactId>appng-template-assembly</artifactId>
+				<version>${appNGVersion}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<dependencies>
+					<dependency>
+						<groupId>org.appng</groupId>
+						<artifactId>appng-template-assembly</artifactId>
+						<version>${appNGVersion}</version>
+					</dependency>
+				</dependencies>
+				<executions>
+					<execution>
+						<phase>install</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.4.1</version>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.appng</groupId>
+			<artifactId>appng-xmlapi</artifactId>
+			<version>${appNGVersion}</version>
+		</dependency>
+	</dependencies>
+</project>

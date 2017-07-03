@@ -1,0 +1,38 @@
+#content form .element_set {
+    display: inline-block;
+	width: auto;
+}
+#content form .element_wrapper {
+    width:auto;
+	display: block;
+}
+#content form .element_wrapper p.clr{
+   clear: none;
+}
+
+input.checkbox, input.radio {
+	width: 13px;
+	height: 13px;
+}
+
+/* Filter Panel */
+.filter_item {
+	display: inline;
+	width: auto;
+	float: none;
+	margin: 0 15px 10px 0; 
+}
+.filter_item label{
+	float: left;
+	padding: 2px 2px 0 0;  
+}
+
+#content form div.field ul li,
+table.eventmessage .ok, table.eventmessage .notice,
+table.eventmessage .info, table.eventmessage .error,
+table.eventmessage .invalid {
+    display: inline;
+}
+div.hr {
+    margin: 2px 0 20px 0;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.appng.org/schema/appng" lang="de" xml:lang="de">
+		<head>
+		<title> - [webadmin] - [appng-webadmin]</title>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta content="de" name="language" />
+		<meta content="" name="author" />
+		<meta content="" name="publisher" />
+		<meta content="Frankfurt am Main" name="copyright" />
+		<meta content="noindex,nofollow" name="robots" />
+		<link href="../../../main/resources/resources/tools_stylesheet_screen.css" rel="stylesheet" type="text/css" />
+
+		<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="../../../main/resources/resources/tools_stylesheet_screen_ie7.css" media="screen" />
+		<![endif]--> 
+		<!--[if IE 6]>
+		<link rel="stylesheet" type="text/css" href="../../../main/resources/resources/tools_stylesheet_screen_ie6.css" media="screen" />
+		<![endif]-->
+
+		<link href="../../../main/resources/resources/tools_stylesheet_jquery-ui-1.8.22.custom.css" rel="stylesheet" type="text/css" />	
+		<link href="../../../main/resources/resources/tools_stylesheet_default_theme.css" rel="stylesheet" type="text/css" />
+
+		<link href="../../../main/resources/assets/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_jquery.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_jquery-ui.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_jquery_tree.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_jquery_format-1.2.min.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_timepicker.js" type="text/javascript" ></script>
+
+		<script language="javascript" src="../../../main/resources/resources/shCore.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/shBrushXml.js" type="text/javascript"></script>
+		<link href="../../../main/resources/resources/tools_stylesheet_shCoreDefault.css" rel="stylesheet" type="text/css" />	
+		
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_jquery-picklist.min.js" type="text/javascript" ></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_prettify.js" type="text/javascript" ></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_jquery.multiselect.min.js" type="text/javascript" ></script>
+
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_ait_slideBox.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_ait_lightwindow.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_ait_tabBox.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_ait-syntaxHighlighter.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_ait_form.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/tools_javascript_ait_manager.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/i18n/jquery-ui-datepicker-de.js" type="text/javascript"></script>
+		<script language="javascript" src="../../../main/resources/resources/i18n/jquery-ui-timepicker-de.js" type="text/javascript"></script>		
+
+		<script type="text/javascript" src="../../../main/resources/resources/tiny_mce/jquery.tinymce.js"></script>
+		<script type="text/javascript" src="../../../main/resources/resources/tiny_mce/tiny_mce.js"></script>
+				<script type="text/javascript" src="../../../main/resources/resources/tools_javascript_autosize.js"></script>
+	</head>
+	
+	
+	<body xmlns="">
+		<div id="login_container">
+			<div id="positioner">
+				
+				<div id="content">
+				<div id="content_head">
+					<form action="" class="form-language-selector" name="form_lang" method="get">
+						<select id="lang_select" name="lang" onChange="return app.submitForm('form_lang')">
+							<option value="en">en</option>
+							<option value="de" selected="selected">de</option>
+						</select>
+						
+					</form>
+					
+				</div>
+					<div id="logo">
+					<a href="../index.html">
+						<img alt="" border="0" height="110" src="../../../main/resources/assets/logo_trans.png" title="" width="220" />
+					</a>
+					</div>
+					<form action="" class="without-submit-control" enctype="multipart/form-data" method="post" name="form_form-auth_login" onsubmit="return true">
+						<input name="form_action" type="hidden" value="loginUser" />
+						<div class="label">
+							<label for="user">
+								Anmeldename 
+							</label>
+						</div>
+						<div class="field">
+							<input class="text" id="user" name="username" type="text" value="" />
+							<script type="text/javascript">
+								jQuery('#user').get(0).focus()
+							</script>
+						</div>
+						<div class="label">
+							<label for="pass">
+								Passwort
+							</label>
+						</div>
+						<div class="field">
+							<input class="text" id="pass" name="password" type="password" value="" />
+						</div>
+						<div class="buttons_panel">
+							<div class="center">
+								<a class="btn_login" href="javascript:void(0)" onclick="return app.submitForm('form_form-auth_login')">Anmelden</a>
+								<input onclick="return app.submitForm('form_form-auth_login')" style="display:none;" type="image" />
+							</div>
+						</div><input class="submit-button" name="submit-button" type="submit" value="submit" />
+						</form>
+						<p class="clr">&nbsp;</p>
+						<div class="buttons_panel">
+							<div class="center">
+								<a class="btn_reset" href="?action=forgotPassword">Passwort vergessen?</a>
+							</div>
+						</div>
+						<div class="hr"></div>
+					</div>
+				</div>
+			</div>
+		</body>
+
+</html>

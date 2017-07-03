@@ -1,0 +1,194 @@
+{
+    "comment": "Root Node: --> A333.1 Rack A2 HE43",
+    "nodes": [
+        {
+            "id": "s1",
+            "caption": "--> A333.1 Rack A2 HE43",
+            "role": "PATCH-PANEL",
+            "root": true,
+			"description": "",
+			"url": "sanity-graph.html"
+        },
+        {
+            "id": "s2-1",
+            "caption": "de-f2-p-spine0",
+            "role": "SWITCH",
+            "root": false,
+			"description": "10GbE",
+			"url": "sanity-graph.html"
+        },
+        {
+            "id": "s2-2",
+            "caption": "de-f2-p-leaf0",
+            "role": "SWITCH",
+            "root": false,
+			"description": "1 GbE Switch<br/>http://edge-core.com/ProdDtl.asp?sno=425&AS4600-54T<br/>- 48 x RJ45 1GbE switch ports (CAT5e)<br/>- 4 x SFP+ switch ports (DAC, 10GBASE-SR)",
+			"url": "sanity-graph.html"
+        },		
+        {
+            "id": "s3",
+            "caption": "de-f2-p-bgp0",
+            "role": "SERVER",
+            "root": false,
+			"description": "c140"
+        },
+        {
+            "id": "s4",
+            "caption": "de-f2-p-ibgp0",
+            "role": "SERVER",
+            "root": false,
+			"description": ""
+        },
+        {
+            "id": "s5",
+            "caption": "de-f2-p-ibgp0",
+            "role": "SERVER",
+            "root": false,
+			"description": ""
+        },
+        {
+            "id": "s6",
+            "caption": "de-f2-p-wwwlb0",
+            "role": "SERVER",
+            "root": false,
+			"description": ""
+        },
+        {
+            "id": "s7",
+            "caption": "de-f2-p-osnetwork0",
+            "role": "SERVER",
+            "root": false,
+			"description": ""
+        },
+        {
+            "id": "s8",
+            "caption": "de-f2-p-mysqllb0",
+            "role": "SERVER",
+            "root": false,
+			"description": ""
+        },
+        {
+            "id": "s9",
+            "caption": "ceph-calamari-0 / c102",
+            "role": "SERVER",
+            "root": false,
+			"description": ""
+        },
+        {
+            "id": "s10",
+            "caption": "ceph-calamari-0 / c102",
+            "role": "SERVER",
+            "root": false,
+			"description": ""
+        }
+		
+    ],
+    "edges": [
+        {
+            "source": "s1",
+            "target": "s2-1",
+			"edgeType": "green",
+			"caption": "if1 -> swp1",
+			"description": "if1 -> swp1 - Optic"
+        },
+        {
+            "source": "s2-1",
+            "target": "s2-2",
+			"edgeType": "black",
+			"caption": "swp10 -> swp1",
+			"description": "swp10 -> swp1 - 10GB Copper"
+        },		
+        {
+            "source": "s2-2",
+            "target": "s3",
+			"edgeType": "yellow",
+			"caption": "swp2 -> ipmi",
+			"description": ""
+        },
+        {
+            "source": "s2-2",
+            "target": "s4",
+			"edgeType": "multiply",
+			"caption": "swp3 -> ipmi",
+			"description": "CAT5E-yellow: ipmi,<br/>CAT5E-black: management,<br/>...",
+			"weight": 3
+        },
+        {
+            "source": "s2-2",
+            "target": "s5",
+			"edgeType": "yellow",
+			"caption": "swp5 -> ipmi",
+			"description": ""
+        },
+        {
+            "source": "s2-2",
+            "target": "s6",
+			"edgeType": "yellow",
+			"caption": "swp6 -> ipmi",
+			"description": ""
+        },
+        {
+            "source": "s2-2",
+            "target": "s7",
+			"edgeType": "yellow",
+			"caption": "swp7 -> ipmi",
+			"description": ""
+        },
+        {
+            "source": "s2-2",
+            "target": "s8",
+			"edgeType": "yellow",
+			"caption": "swp8 -> ipmi",
+			"description": ""
+        },
+        {
+            "source": "s2-2",
+            "target": "s9",
+			"edgeType": "yellow",
+			"caption": "swp9 -> ipmi",
+			"description": ""
+        },
+        {
+            "source": "s2-2",
+            "target": "s10",
+			"edgeType": "yellow",
+			"caption": "swp10 -> ipmi",
+			"description": ""
+        }
+
+    ],
+	
+	"filter": {
+		"depth": {
+			"config": {
+				"type": "radio",
+				"label": "Graph depth",
+				"name": "depth"
+			},
+			"data": [
+				{
+					"label": "Not defined",
+					"active": false,
+					"value": "0"
+				},
+				{
+					"label": "1 level",
+					"active": false,
+					"value": "1"
+				},
+				{
+					"label": "2 level",
+					"active": false,
+					"value": "2"
+				},
+				{
+					"label": "3 level",
+					"active": true,
+					"value": "3"
+				}
+				
+			]
+			
+		}	
+	}
+}

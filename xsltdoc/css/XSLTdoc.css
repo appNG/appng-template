@@ -1,0 +1,402 @@
+/******************************
+/* Main HTML tags             *
+/******************************/
+html {
+	padding: 0;
+	margin: 0;
+	background-color: #F0F0F0;
+}
+
+body {
+	overflow-y: scroll;
+}
+
+body {
+	padding: 0 20px;
+	margin: 0;
+	width: auto;
+	background-color: #F6F6F5;
+}
+body, table, td, th, tr, thead, tbody, tfoot, colgroup, col {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	line-height: 1.6em;
+	color: #7d7d7d;
+	border: 0;
+}
+
+a {
+	color: #FF8F02;
+	cursor: pointer;
+	text-decoration: none;
+	text-transform: none;
+}
+
+a:hover {
+	color: #434343;
+	text-decoration: none;
+	text-transform: none;
+}
+
+p {
+	text-align: justify;
+	line-height: 1.3em;
+}
+
+hr {
+	border: 0;
+	background-color: transparent;
+	margin: 0;
+	height: 0;
+	display: none;
+}
+
+h1, h2 {
+	font-size: 150%;
+	color: #FF8F02;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+h3, h4, h5 {
+	font-size: 125%;
+	color: #434343;
+	margin-bottom: 0em;
+	margin-top: 2em;
+}
+body > div {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 0 auto;
+	width: auto;
+	background-color: #ffffff;
+}
+
+/******************************
+/* Layout Divs                *
+/******************************/
+#navbar {
+	background-color: #434343;
+	text-align: center;
+	margin: 4px 4px 20px 4px;
+	padding: 3px 10px 3px 10px;
+}
+
+#menuLinks {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#content {
+	margin: 0 4px 0 4px;
+	padding: 10px 30px;
+	/*border: 1px solid #CDCDCD;*/
+}
+
+#footer {
+    background-color: #434343;
+	text-align: center;
+	margin: 23px 4px 4px 4px;
+	padding: 3px 10px 3px 10px;
+}
+
+/******************************
+/* Component Divs             *
+/******************************/
+#stylesheetDetail {
+  margin: 0;
+  padding: 0;
+}
+
+#includes, #imports, #importedSchemas {
+	margin: 10px 0px 10px 0px;
+}
+
+#includes h2, #imports h2, #importedSchemas h2 {
+	font-size: 14px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#includes ul, #imports ul, #importedSchemas ul {
+	margin-top: 4px;
+}
+
+.summarySection {
+	margin: 20px 0px 0 0px;
+	padding: 0px;
+}
+
+.detailSection {
+	margin: 20px 0px 0 0px;
+	padding: 0px;
+}
+
+.summarySection h2,
+.detailSection h2 {
+    background: none repeat scroll 0 0 #D7D7D7;
+    border: 1px solid #929292;
+    margin: 0;
+    padding: 3px 3px 3px 7px;
+    text-align: left;
+    font-size: 100%;
+    color: #434343;
+}
+
+a.menuLinkCurrent, a.menuLink {
+	color: #fefefe;
+}
+a.menuLinkCurrent:hover, a.menuLink:hover {
+	color: #FF8F02;
+}
+
+a.menuLink:link, a.menuLink:visited, a.menuLink:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0 10px 0 10px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.menuLinkCurrent:link, a.menuLinkCurrent:visited, a.menuLinkCurrent:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0 10px 0 10px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a.sourceLink:link, a.sourceLink:visited, a.sourceLink:hover {
+  font-family: "Courier New", Courier, monospace;
+	text-decoration: none;
+	font-size: 80%;	
+}
+
+/******************************
+/* class styles               *
+/******************************/
+
+div.properties {
+  font-family: "Courier New", Courier, monospace;
+}
+
+div.property {
+  margin-top: 10px;
+}
+
+div.propertyCaption {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+div.propertyContent {
+  margin-top: 0px;
+}
+
+div.listItem {
+  margin: 0;
+  padding: 5px 5px 5px 5px;
+  border-left: 1px solid #929292;
+  border-right: 1px solid #929292;
+  border-bottom: 1px solid #929292;
+}
+div.listItem.odd {
+  background-color: #f6f6f6;
+}
+div.listItem.even {
+  background-color: #ffffff;
+}
+
+p.shortDescr, p.detailDescr {
+  font-size: 14px;
+  margin: 3px 0px 0px 20px;
+	padding: 0;
+}
+
+p.detailDescr {
+	margin-top: 3px;
+}
+
+/*div.listItem p.shortDescr {
+  margin: 3px 0px 0px 20px;
+	padding: 0;
+}*/
+
+.paramName, .paramType, .paramValue, .declCaption, .modeName, .paramPropertyList, .paramPropertyName, .paramPropertyValue, .accessType {
+  font-family: "Courier New", Courier, monospace;
+}
+.paramType {
+	font-style: italic;
+}
+
+.declCaption {
+  font-weight: bold;
+}
+
+.declName, .accessType {
+  font-weight: bold;
+}
+
+.detailDoc {
+  margin-left: 20px;
+  margin-bottom: 9px;
+}
+div.detailDoc a:link, div.detailDoc a:visited{
+	font-family: "Courier New", Courier, monospace;
+	color: #736948;
+	font-weight: bold;
+}
+div.detailDoc a[name]{
+	font-family: "Courier New", Courier, monospace;
+	color: #736948;
+	font-weight: bold;
+}
+div.detailDoc a[name]:hover{
+	color: #736948;
+}
+div.detailDoc a:hover{
+	color: #ff8f02;
+}
+
+.shortDoc {
+  margin-left: 20px;
+  margin-bottom: 9px;
+}
+
+a.declLink:link, a.declLink:visited {
+    color: #736948;
+    text-decoration: none;
+    text-transform: none;
+}
+a.declLink:hover {
+	color: #ff8f02;
+}
+
+div.declaration {
+  margin: 0;
+  margin-bottom: 9px;
+  padding: 0;
+}
+
+div.declaration a:link, div.declaration a:visited{
+	font-family: "Courier New", Courier, monospace;
+	color: #736948;
+	font-weight: bold;
+}
+div.declaration a[name]{
+	font-family: "Courier New", Courier, monospace;
+	color: #736948;
+	font-weight: bold;
+}
+div.declaration a[name]:hover{
+	color: #736948;
+}
+
+div.declaration a:hover{
+	color: #ff8f02;
+}
+
+.detailAttribute { 
+  font-style:italic 
+}
+.detailDeclaration { 
+  font-weight: bold 
+}
+.detailAttrDesc {
+	margin-left: 20px;
+	margin-top: 0px;
+}
+
+ul {
+	list-style-type: square;
+}
+
+td.underlined {
+	border-bottom-width: 1px;
+	border-bottom-style: solid; 
+	border-bottom-color: #D2D2D2;
+}
+
+div.source {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10pt;
+  border: 1px solid #999;
+  color:black;
+  padding: 12px;
+  margin: 2pt 5pt 10pt 5pt;
+}
+
+div.source pre {
+  color:black;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+div.remark {
+  font-style: italic;
+  margin-left:3em;
+  margin-right:3em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+div.outputAttributes, div.decimalFormatAttributes {
+  display: table;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #339933;
+  border-collapse: collapse;
+  margin-left: 20px;
+  caption-side: top;
+}
+
+div.outputAttributesHeader, div.decimalFormatAttributesHeader {
+  display: table-caption;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #339933;
+  background-color: #eeffee;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0.2em;
+  margin-top: 10px;
+}
+div.outputAttributeItem, div.decimalFormatAttributeItem {
+  display: table-row;
+}
+
+div.outputAttributeName, div.decimalFormatAttributeName {
+  font-weight: bold;
+}
+
+div.outputAttributeName, div.outputAttributeValue,
+div.decimalFormatAttributeName, div.decimalFormatAttributeValue {
+  display: table-cell;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #339933;
+  padding: 0.2em;
+}
+
+table.characterMapTable {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #993333;
+  margin-top: 10px;
+  border-collapse: collapse;
+  margin-left: 20px;
+}
+
+table.characterMapTable th, table.characterMapTable td {
+  text-align: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #993333;
+  padding: 0.2em;
+}
+
+table.characterMapTable th {
+  background-color: #ffeeee;
+  font-weight: bold;
+  font-size: 14px;
+}

@@ -1,0 +1,31 @@
+#content table[rel="data-table"] form.editable-form {
+	margin: 0;
+	display: block;
+}
+
+#content table[rel="data-table"] form.editable-form input {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	line-height: 12px;
+	border: 1px solid #b9bbb0;
+	background: #fff;
+	padding: 2px 2px;
+	margin: 0;
+	display: inline-block;
+	min-width: 70px;
+}
+
+#content table[rel="data-table"] form.editable-form button[type="submit"]
+	{
+	width: 22px;
+	height: 22px;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	line-height: 12px;
+	border: none;
+	margin: 1px 0 0 3px;
+	padding: 1px;
+	display: inline-block;
+	color: transparent;
+	background: url(../assets/button_round_ok.gif) no-repeat 2px 4px;
+}
