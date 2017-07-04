@@ -1,0 +1,7 @@
+image::https://www.aiticon.com/assets/images/appng_logo_760px.jpg[]
+:snapshot: 1.14.4-SNAPSHOT
+:stable: 1.14.3
+
+== Welcome to appNG Template
+
+appNG Template is the classic XSLT based template, used in conjunction with the appNG Manager. 
