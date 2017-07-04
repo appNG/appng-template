@@ -3,10 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.appng</groupId>
 	<artifactId>appng-template</artifactId>
-	<version>1.14.2</version>
+	<version>1.14.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>appNG Template</name>
 	<description>The appNG-template</description>
+	<url>https://www.appng.org</url>
 
 	<parent>
 		<groupId>org.appng</groupId>
@@ -24,11 +25,13 @@
 		<system>jira</system>
 		<url>https://www.appng.org/jira/projects/TPL</url>
 	</issueManagement>
+
 	<scm>
 		<connection>scm:git:ssh://git@github.com:appNG/appng-template.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com:appNG/appng-template.git</developerConnection>
 		<url>https://github.com/appNG/appng-template</url>
 	</scm>
+
 	<distributionManagement>
 		<repository>
 			<id>appng-stable</id>
@@ -39,6 +42,7 @@
 			<url>https://www.appng.org/nexus/repository/appng-snapshot/</url>
 		</snapshotRepository>
 	</distributionManagement>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -48,8 +52,78 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<profiles>
+		<profile>
+			<id>maven-central</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.6</version>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.sonatype.plugins</groupId>
+						<artifactId>nexus-staging-maven-plugin</artifactId>
+						<version>1.6.7</version>
+						<extensions>true</extensions>
+						<configuration>
+							<serverId>sonatype</serverId>
+							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+							<autoReleaseAfterClose>false</autoReleaseAfterClose>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+			<distributionManagement>
+				<repository>
+					<id>sonatype</id>
+					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+				</repository>
+			</distributionManagement>
+		</profile>
+	</profiles>
+
 	<build>
 		<plugins>
+			<plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>generate-docs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+				</executions>
+				<configuration>
+					<additionalparam>-Xdoclint:all,-Xdoclint:-html</additionalparam>
+					<sourcepath>src/main/java:target/generated-sources/constants</sourcepath>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+						<phase>verify</phase>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<dependencies>
@@ -67,10 +141,6 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.4.1</version>
 			</plugin>
 		</plugins>
 	</build>
