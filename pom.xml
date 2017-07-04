@@ -43,6 +43,44 @@
 		</snapshotRepository>
 	</distributionManagement>
 
+	<developers>
+		<developer>
+			<id>mherlitzius</id>
+			<name>Matthias Herlitzius</name>
+			<email>matthias.herlitzius at appng.org</email>
+			<organization>aiticon GmbH</organization>
+			<organizationUrl>http://www.aiticon.com</organizationUrl>
+		</developer>
+		<developer>
+			<id>madness-inc</id>
+			<name>Matthias Müller</name>
+			<email>matthias.mueller at appng.org</email>
+			<organization>aiticon GmbH</organization>
+			<organizationUrl>http://www.aiticon.com</organizationUrl>
+		</developer>
+		<developer>
+			<id>stuemke</id>
+			<name>Claus Stümke</name>
+			<email>claus.stuemke at appng.org</email>
+			<organization>aiticon GmbH</organization>
+			<organizationUrl>http://www.aiticon.com</organizationUrl>
+		</developer>
+		<developer>
+			<id>juri-zukovskij</id>
+			<name>Juri Zukovskij</name>
+			<email>juri.zukovskij at appng.org</email>
+			<organization>aiticon GmbH</organization>
+			<organizationUrl>http://www.aiticon.com</organizationUrl>
+		</developer>
+		<developer>
+			<id>Verjy</id>
+			<name>Verginia Bergmann</name>
+			<email>verginia.bergmann at appng.org</email>
+			<organization>aiticon GmbH</organization>
+			<organizationUrl>http://www.aiticon.com</organizationUrl>
+		</developer>
+	</developers>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -135,7 +173,7 @@
 				</dependencies>
 				<executions>
 					<execution>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>single</goal>
 						</goals>
