@@ -1118,8 +1118,8 @@
 											<field binding="application.displayName" name="displayName" type="text">
 												<label id="displayName"><![CDATA[Display name]]></label>
 											</field>
-											<field binding="application.coreApplication" name="coreApplication" type="checkbox">
-												<label id="coreApplication"><![CDATA[Core Application]]></label>
+											<field binding="application.privileged" name="privileged" type="checkbox">
+												<label id="privileged">Privileged Application</label>
 											</field>
 											<field binding="application.fileBased" name="fileBased" type="checkbox">
 												<label id="filebased"><![CDATA[filebased]]></label>
