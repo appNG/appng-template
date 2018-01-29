@@ -46,7 +46,7 @@ function TabBox(config){
             jQuery('#'+this.config.id+' a.anchor-to-delete').remove();
             
             
-            if (jQuery('#'+this.config.id+' .'+this.config.itemClass+' .'+this.config.itemTitleClass+' ul li span').size()>0) {
+            if (jQuery('#'+this.config.id+' .'+this.config.itemClass+' .'+this.config.itemTitleClass+' ul li span').length>0) {
                 item.contentTitle =  jQuery('#'+this.config.id+' .'+this.config.itemClass+' .'+this.config.itemTitleClass+' ul li span').get(i).innerHTML;
             }
             
@@ -142,7 +142,7 @@ var tabBox = {
    
    initEventByItem: function(event, boxIndex, itemIndex){
         var anchorId = tabBox.items[boxIndex].items[itemIndex].anchorId;
-        jQuery('#'+anchorId).bind(event, function(){
+        jQuery('#'+anchorId).on(event, function(){
             tabBox.items[boxIndex].toggleButton(tabBox.items[boxIndex].config.buttonPanelId ,itemIndex);
             tabBox.items[boxIndex].showTab(itemIndex);
             

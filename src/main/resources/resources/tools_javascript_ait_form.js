@@ -243,8 +243,8 @@ function formElement(form, selector, type, options){
 			if (this.tipText != null) {
 				var self = this;
 				if (this.obj.value == '') this.obj.value = this.tipText;
-				jQuery(this.obj).bind('focus', function(){ if (this.value == self.tipText) this.value = '' });
-				jQuery(this.obj).bind('blur', function(){ if (jQuery.trim(this.value) == '') this.value = self.tipText });
+				jQuery(this.obj).on('focus', function(){ if (this.value == self.tipText) this.value = '' });
+				jQuery(this.obj).on('blur', function(){ if (jQuery.trim(this.value) == '') this.value = self.tipText });
 			}
 			break;
 		default :
@@ -932,7 +932,7 @@ function DependenciesProcessor(selector, elementType, dependencies){
 			
 		}
 		
-		jMaster.bind('change', function(){
+		jMaster.on('change', function(){
 
 			for (var i in self.dependencies) {
 				
@@ -1092,9 +1092,9 @@ function DependenciesProcessor(selector, elementType, dependencies){
 			case "long":
 			case "list:text":
 			case "longtext":
-			    var currentValue = jQuery(slaveSelector).attr('value');
+			    var currentValue = jQuery(slaveSelector).val();
 			    if (currentValue != data.slaveValue){
-			     jQuery(slaveSelector).attr('value', data.slaveValue).trigger('change').trigger('blur');
+			     jQuery(slaveSelector).val(data.slaveValue).trigger('change').trigger('blur');
 			    }
 			break;
 			

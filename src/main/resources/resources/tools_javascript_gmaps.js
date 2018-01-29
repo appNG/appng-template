@@ -67,8 +67,8 @@ var gmaps = {
         });
         
         //Form fields events
-        jQuery(this.options.latSelector).bind('change', function(){self.refreshMarkerPosition();});
-        jQuery(this.options.lngSelector).bind('change', function(){self.refreshMarkerPosition();});
+        jQuery(this.options.latSelector).on('change', function(){self.refreshMarkerPosition();});
+        jQuery(this.options.lngSelector).on('change', function(){self.refreshMarkerPosition();});
         
       }
       
@@ -131,13 +131,13 @@ var gmaps = {
 
         google.maps.event.addListener(infowindow, 'domready', function() {
             //Delete marker event
-            jQuery('a#'+markerID).bind('click', function(){
+            jQuery('a#'+markerID).on('click', function(){
                 self.removeMarker(marker, infowindow);
                 marker = null;
                 infowindow = null;
             });
             //Refresh data
-            jQuery('a#'+markerID+'_refresh').bind('click', function(){
+            jQuery('a#'+markerID+'_refresh').on('click', function(){
                 self.setFormFields(marker);
             });
             

@@ -51,14 +51,14 @@ var SlideBox = function(){
                 this.currentItemId = id;
             }
             
-            jQuery(obj).bind('click', function() {
+            jQuery(obj).on('click', function() {
                  onClick(id, slideBoxObj);
                  resetSelected(id);
             });
           }  
           
-          jQuery(obj).bind('mouseover', function()     { setSelected(id, slideBoxObj); });
-          jQuery(obj).bind('mouseout', function()     { resetSelected(id, slideBoxObj); });
+          jQuery(obj).on('mouseover', function()     { setSelected(id, slideBoxObj); });
+          jQuery(obj).on('mouseout', function()     { resetSelected(id, slideBoxObj); });
           
           if (folding == 'false'){ onClick(id, slideBoxObj); };
           

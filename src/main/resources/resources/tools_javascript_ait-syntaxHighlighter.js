@@ -85,15 +85,15 @@ var syntaxHighlighter = {
 		
 		var self = this;
 		
-		jQuery(obj).bind('mouseover', function(){
+		jQuery(obj).on('mouseover', function(){
 			jQuery(obj).addClass('active');
 		});
 		
-		jQuery(obj).bind('mouseout', function(){
+		jQuery(obj).on('mouseout', function(){
 			jQuery(obj).removeClass('active');
 		});									
 	
-		jQuery(obj).bind('click', function(){
+		jQuery(obj).on('click', function(){
 			
 			if (self.jSelectedLine != null) self.jSelectedLine.removeClass('selected');
 			else jQuery(self.c.containerSelector).find('.line').removeClass('selected');

@@ -89,7 +89,7 @@ var app = {
 		
 		this.initMultiSelect();
 		
-		$('.autosize').autosize();
+		if (typeof autosize != 'undefined') autosize($('.autosize'));
 		
 		this.initLightwindowContents();
 		
@@ -98,14 +98,14 @@ var app = {
     initButton: function(id, imageOver){
         if (jQuery('#'+id).get(0)) {
             var imageNormal = jQuery('#'+id).get(0).src;
-            jQuery('#'+id).bind('mouseover', function(){ jQuery('#'+id).get(0).src = imageOver });
-            jQuery('#'+id).bind('mouseout',  function(){ jQuery('#'+id).get(0).src = imageNormal });
+            jQuery('#'+id).on('mouseover', function(){ jQuery('#'+id).get(0).src = imageOver });
+            jQuery('#'+id).on('mouseout',  function(){ jQuery('#'+id).get(0).src = imageNormal });
         }
     },
     
     initDisableButton: function(id,divId){
         if (jQuery('#'+id).get(0)) {
-            jQuery('#'+id).bind('click', function(){ 
+            jQuery('#'+id).on('click', function(){ 
             	app.toggleDisableButton(id,divId);
             });
             app.toggleDisableButton(id,divId);
@@ -133,20 +133,20 @@ var app = {
     },
 	
     updateTableDate: function(table, row){
-    	var hitstart = jQuery('#hitstart').attr('value');
+    	var hitstart = jQuery('#hitstart').val();
 		hitstart = hitstart ? parseInt(hitstart) : 0;
         jQuery('tbody tr', jQuery(table)).each( function(index){ 
             jQuery(this).attr('rel', index);
             jQuery('td span.index', this).html(index + 1 + hitstart);
-            jQuery('.order', this).attr('value', index + 1 + hitstart);
+            jQuery('.order', this).val(index + 1 + hitstart);
         });
     },
     
     initForms: function(){
-        jQuery('form').bind('submit', function(){
+        jQuery('form').on('submit', function(){
             if (!jQuery(this).hasClass('without-submit-control')) return false;
         });
-        jQuery('form').bind('reset', function(){
+        jQuery('form').on('reset', function(){
             if (!jQuery(this).hasClass('without-submit-control')) return false;
         });
         if (typeof(formsArr) == 'object'){
@@ -202,7 +202,7 @@ var app = {
 				if  (document.forms[formName].onsubmit.call()) document.forms[formName].submit();
 				else jForm.attr('data-submitted','false');
 			} else {
-				jQuery('form').unbind('submit');
+				jQuery('form').off('submit');
 				app.showLoader();
 				document.forms[formName].submit();
 			}
@@ -214,7 +214,7 @@ var app = {
     
     resetForm: function(formName){
         if (formName) {
-            jQuery('form').unbind('reset');
+            jQuery('form').off('reset');
             document.forms[formName].reset();
         }
         return false;
@@ -318,7 +318,7 @@ var app = {
 	
     submitFormByFieldValue: function(objSubmitField, selectorField){
         var jParent = jQuery(objSubmitField).parent('form');
-        var fieldValue = jParent.find(selectorField).attr('value');
+        var fieldValue = jParent.find(selectorField).val();
         var pattern = /^\w+$/;
         if (pattern.test(fieldValue)) {
             location.href = jParent.attr('action') + '/' + fieldValue;
@@ -348,7 +348,7 @@ var app = {
         toggleState();
         
         //Event
-        jQuery(masterItemSelector).bind('click',toggleState);
+        jQuery(masterItemSelector).on('click',toggleState);
     },
     
     initLoader: function(){
@@ -397,7 +397,7 @@ var app = {
 
 			}
             
-            jQuery(this).bind('click', function(){
+            jQuery(this).on('click', function(){
 				if (changeTab) tabBox.activateTabByName(tabName);
 				else self.showLoader();
             });
@@ -434,7 +434,7 @@ var app = {
 	},
 	
     copyToClipboard: function(txt) {
-    
+  
 		if (!txt) return;
 		
 		if (window.clipboardData) {
@@ -504,7 +504,7 @@ var app = {
 			
 			if (textStatus != 'success') return;
 			
-			jQuery(wrapper).find('.copyToClipboard').bind('click', function(){
+			jQuery(wrapper).find('.copyToClipboard').on('click', function(){
 				self.copyToClipboard(data);
 			});
 			
