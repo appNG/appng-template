@@ -384,7 +384,7 @@
 		</xsl:param>
 		
 		<xsl:param name="element-id" select="(*[1]/@id,'unknown_element')[1]" as="xs:string"/>
-		<xsl:param name="element-htmlid" select="string-join((name(*[1 and @id]),$element-id,string($element-abs-position)),'_')" as="xs:string"/>
+		<xsl:param name="element-htmlid" select="string-join(('el',$element-id,string($element-abs-position)),'_')" as="xs:string"/>
 		
 		<xsl:param name="element-foldable" select="(exists(@folded),false())[1]" as="xs:boolean"/>
 		<xsl:param name="element-folded" select="(@folded,false())[1]" as="xs:boolean"/>
